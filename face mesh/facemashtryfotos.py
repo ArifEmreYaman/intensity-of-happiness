@@ -38,7 +38,7 @@ while True:
 
     lipsUpperOuter_tempory_y = np.array([], dtype=np.int32)
     lipsLowerOuter_tempory_y = np.array([], dtype=np.int32)
-    lipsUpperInner_tempory_y = np.aqrray([], dtype=np.int32)
+    lipsUpperInner_tempory_y = np.array([], dtype=np.int32)
     lipsLowerInner_tempory_y = np.array([], dtype=np.int32)
 
     image = cv2.flip(image, 1)
@@ -88,3 +88,4 @@ while True:
         continue
 
 cv2.destroyAllWindows()
+
