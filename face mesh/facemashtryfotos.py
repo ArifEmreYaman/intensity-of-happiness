@@ -26,7 +26,7 @@ def save_landmarks(file_name, landmarks, length):
 degisken = 4
 
 while True:
-    photos = f"C:\\Users\\yaman\\Desktop\\2209\\dataset\\{degisken}.jpg"
+    photos = f"degisken secin"
     image = cv2.imread(photos)
     if image is None:
         break 
@@ -88,4 +88,5 @@ while True:
         continue
 
 cv2.destroyAllWindows()
+
 
