@@ -24,7 +24,7 @@ plt.show()
 mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(static_image_mode=True, max_num_faces=1, min_detection_confidence=0.5)
 
-dataset_dir = 'C:\\Users\\yaman\\Desktop\\2209\\dataset\\gulen_yuz_arif_2209b\\orta_renksiz'
+dataset_dir = 'path secin'
 
 output_data = []
 
@@ -58,4 +58,5 @@ for image_file, label in zip(os.listdir(dataset_dir), labels):
 cv2.destroyAllWindows()
 
 output_df = pd.DataFrame(output_data, columns=['image_path', 'emotion', 'cluster'])
+
 output_df.to_csv('image_labels_with_clusters.csv', index=False)
