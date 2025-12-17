@@ -89,7 +89,7 @@ def draw_landmarks(image, landmarks):
         cv2.circle(image, (x, y), 2, (0, 255, 0), -1)
     return image
 
-dataset_dir = 'C:\\Users\\yaman\\Desktop\\2209\\dataset\\gulen_yuz_arif_2209b\\orta_renksiz'
+dataset_dir = 'path secin'
 features_list = []
 
 for image_file in os.listdir(dataset_dir):
@@ -113,5 +113,6 @@ features_array = np.array(features_list)
 
 df = pd.DataFrame(features_array)
 df.to_csv('features.csv', index=False)
+
 
 cv2.destroyAllWindows()
